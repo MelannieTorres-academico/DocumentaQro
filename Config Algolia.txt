@@ -1,0 +1,10 @@
+composer require laravel/scout
+
+.env--->
+ALGOLIA_APP_ID=X253FTY2KE
+ALGOLIA_SECRET=ebb321ca741761aa8ee0190cdeeb69ea
+
+
+php artisan scout:import "App\Datasheet"
+
+composer require algolia/algoliasearch-client-php

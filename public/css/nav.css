@@ -1,0 +1,93 @@
+﻿.dropdown-menu > li {
+    display: inline-block;
+    float:left;
+}
+
+#contentContainer {
+	font-family: Lato;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.dropdown-menu > li {
+    display: inline-block;
+    float:left;
+}
+
+.open > ul {
+    display: inline-flex !important;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 25px;
+    background-color:#8fcab6;
+    margin-left: -580px;
+    margin-right: 200px;
+    width: 100vw;
+}
+
+.navLetra {
+
+	font-size: 18px;
+
+}
+
+.navbar {
+
+	margin-bottom: 0%;
+
+	background-color: #000000;
+}
+
+
+
+.efecto:hover {
+  color: #8fcab5 !important;
+  background-color: transparent !important;
+}
+.efecto-drop:hover {
+  color: black !important;
+  background-color: transparent !important;
+}
+
+
+.holi:focus {
+    background-color: transparent !important;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	background-color: transparent !important;
+}
+
+.text-white, .text-white a, .text-white a:active {
+	color: white !important;
+}
+
+.ey {
+  margin-left: -50px;
+}
+
+
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>img {
+    height:auto;
+    padding: 5px;
+    width: 200px;
+}
+
+@media (max-width: 40em) {
+.element {
+display: none;
+}
+}
+
+
+@media (min-width: 40em) {
+.elements {
+display: none;
+}
+}

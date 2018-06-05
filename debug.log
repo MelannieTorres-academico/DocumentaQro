@@ -1,0 +1,32 @@
+[0418/225356.935:ERROR:process_reader_win.cc(114)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso.  (0xc0000022)
+[0418/225356.945:ERROR:exception_snapshot_win.cc(87)] thread ID 1900 not found in process
+[0418/225356.945:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0418/225356.961:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0419/224541.807:ERROR:process_info.cc(343)] VirtualQueryEx: Acceso denegado. (0x5)
+[0419/224541.819:ERROR:process_info.cc(564)] ReadMemoryInfo failed
+[0419/224541.819:ERROR:process_reader_win.cc(233)] ReadMemory at 0x6e777dc8 of 12 bytes failed: Solo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0419/224541.838:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0419/224541.839:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0419/224541.862:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0419/225814.402:ERROR:process_reader_win.cc(114)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso.  (0xc0000022)
+[0419/225814.402:ERROR:exception_snapshot_win.cc(87)] thread ID 14124 not found in process
+[0419/225814.402:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0419/230218.574:ERROR:process_reader_win.cc(114)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso.  (0xc0000022)
+[0419/230218.574:ERROR:exception_snapshot_win.cc(87)] thread ID 7908 not found in process
+[0419/230218.574:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0419/230328.513:ERROR:process_reader_win.cc(114)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso.  (0xc0000022)
+[0419/230328.529:ERROR:exception_snapshot_win.cc(87)] thread ID 13236 not found in process
+[0419/230328.529:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0419/230328.529:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0419/230353.460:ERROR:process_reader_win.cc(114)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso.  (0xc0000022)
+[0419/230353.461:ERROR:exception_snapshot_win.cc(87)] thread ID 12384 not found in process
+[0419/230353.461:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0419/231518.640:ERROR:process_info.cc(343)] VirtualQueryEx: Acceso denegado. (0x5)
+[0419/231518.656:ERROR:process_info.cc(564)] ReadMemoryInfo failed
+[0419/231518.656:ERROR:process_reader_win.cc(233)] ReadMemory at 0x5e727dc8 of 12 bytes failed: Solo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0419/231518.656:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0419/231518.656:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0419/231518.687:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0419/231643.361:ERROR:process_reader_win.cc(114)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso.  (0xc0000022)
+[0419/231643.362:ERROR:exception_snapshot_win.cc(87)] thread ID 8996 not found in process
+[0419/231643.362:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

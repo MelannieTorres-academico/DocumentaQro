@@ -1,0 +1,27 @@
+table
+{
+  border-collapse: collapse;
+    width: 600px;
+}
+
+td
+{
+  padding: 10px 20px 10px 20px;
+}
+    select
+    {
+        padding: 10px 20px 10px 20px;
+        margin: 10px;
+        font-size: 18px;
+        display: inline-block;
+        
+    }
+    option 
+    {
+        padding: 10px 20px 10px 20px;
+    }
+    #ab
+    {
+        font-size: 18px;
+        display: inline-block;
+    }

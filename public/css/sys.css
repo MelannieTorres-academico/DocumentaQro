@@ -1,0 +1,121 @@
+
+
+/* Admin panel css begins */
+
+
+
+
+.block {
+	position: relative;
+	width: 100%;
+	height: 20%;
+}
+
+
+.block a {
+	position: relative;
+	width: 100%;
+	height: 95%;
+	display: block;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+	.products_top_text h1 {
+		padding: 20px
+	}
+}
+
+@media only screen and (min-width: 1001px) {
+	.products_top_text h1 {
+		padding: 25px
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.block_fix {
+		height: 141px
+	}
+	.block_fix .products_top_text {
+		height: 141px
+	}
+}
+
+#country_vn .products_top_text.color_b h1 {
+	font-size: 1.85em;
+}
+#country_vn .products_top_text h1 {
+	font-weight: 400 !important;
+}
+
+#country_nl .products_top_text.color_f h1 {
+	font-size: 10.9em;
+}
+
+
+
+.overlay_line_white {
+	background: #fff;
+	top: 0
+}
+
+.white_text {
+	color: white;
+}
+.gray_text {
+	color:#A6A6A6;
+}
+.color_a {
+	background: #8fcab5;
+	color: #ffffff
+}
+.color_b {
+	background: #e0007a;
+	color: #ffffff
+}
+.color_c {
+	background: #e9d206;
+	color: #ffffff
+}
+.color_d {
+	background: #000000;
+	color: #ffffff
+}
+.color_e {
+	background: #ffffff;
+	color: #000000
+}
+
+
+.colorA {
+	background-color: #3cb98d
+}
+.colorB {
+	background-color: #87c75b
+}
+.colorC {
+	background-color: #ffa162
+}
+.colorD {
+	background-color: #ff8e9e
+}
+
+h1{
+
+        text-decoration: none;
+        float: left;
+        color: white;
+
+}
+
+.white {
+
+	color: white !important;
+
+}
+
+/* sede */
+
+.sede{
+	width:100px;
+	max-width:100px;
+}
