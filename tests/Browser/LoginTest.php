@@ -7,7 +7,7 @@ use Tests\DuskTestCase;
 use Laravel\Dusk\Chrome;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
-class ExampleTest extends DuskTestCase
+class LoginTest extends DuskTestCase
 {
 
   /**
@@ -24,20 +24,20 @@ class ExampleTest extends DuskTestCase
             ->type('email', 'root@doq.com')
             ->type('password', 'Doq123')
             ->press('Login')
-            //Login Super Administrador 
+            //Login Super Administrador
             ->assertPathIs('/sysdoq')
             ->assertSee('Editar Cuenta Super Usuario')
-            Logout Super Administrador 
+            Logout Super Administrador
             ->clickLink('root')
             ->clickLink('Logout')
             ->assertPathIs('/')
-            //Login Administrador 
+            //Login Administrador
             ->visit('http://localhost:8000/sysdoq')
             ->type('email', 'vampiro@doq.com')
             ->type('password', 'Doq123')
             ->press('Login')
             ->assertDontSee('Editar Cuenta Super Usuario');
-   
+
 
         }); */
     }
