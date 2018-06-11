@@ -375,9 +375,4 @@ class FuncionController extends Controller
                       ->with('success','Función eliminada exitosamente');
   }
 
-
-
-
-
-
 }
