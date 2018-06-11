@@ -85,14 +85,12 @@
 <div id="table-container">
   <?php
 
-$conn = mysqli_connect('127.0.0.1','root','','document_sysdoq');
-   $query="select * from calendario";
-   $output=mysqli_query($conn,$query);
+  $conn = mysqli_connect('127.0.0.1','root','','document_sysdoq');
+  $query = "select * from calendario";
+  $output = mysqli_query($conn,$query);
+  $events = array();
 
- $events = array();
-
-   while($fetch = mysqli_fetch_array($output,MYSQLI_ASSOC))
-   {
+   while($fetch = mysqli_fetch_array($output,MYSQLI_ASSOC)) {
      $e = array();
 
      $e['id'] = $fetch['id'];
@@ -100,17 +98,12 @@ $conn = mysqli_connect('127.0.0.1','root','','document_sysdoq');
      $e['start'] = $fetch['start'];
      $e['color'] = $fetch['color'];
 
-
-
      array_push($events, $e);
 
-   }//;
- //echo json_encode($events);
+   }
   ?>
  </div>
-
-
-        <div id='calendar'></div>
+ <div id='calendar'></div>
 <hr>
 </div>
 
