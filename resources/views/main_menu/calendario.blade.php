@@ -85,7 +85,7 @@
 <div id="table-container">
   <?php
 
-  $conn = mysqli_connect('127.0.0.1','root','','doqumenta');
+  $conn = mysqli_connect('127.0.0.1','root','','document_sysdoq');
   $query = "select * from calendario";
   $output = mysqli_query($conn,$query);
   $events = array();
