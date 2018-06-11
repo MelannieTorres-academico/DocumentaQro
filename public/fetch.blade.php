@@ -1,6 +1,7 @@
 <?php
 
-  $conn = mysqli_connect('127.0.0.1','root','','doqumenta');
+
+  $conn = mysqli_connect('127.0.0.1','root','','document_sysdoq');
   $request = '';
   if (isset($_POST['request'])) {
       $request = $_POST['request'];
