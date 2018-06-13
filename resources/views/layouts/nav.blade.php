@@ -29,7 +29,7 @@
        <li><a href = "/patrocinadores/show" class="efecto">PATROCINADORES</a></li>
       </ul>
       <ul class = "nav navbar-nav navLetra text-white efecto holi ">
-        <li><a href = "/blog" class="efecto">BLOG</a></li>
+        <li><a href = "https://medium.com/@DOQUMENTAmx" class="efecto"  target="_blank">BLOG</a></li>
       </ul>
        <ul class = "nav navbar-nav navLetra text-white efecto holi ">
          <li><a href = "/sedesv" class="efecto">SEDES</a></li>
