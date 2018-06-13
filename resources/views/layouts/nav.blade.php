@@ -10,41 +10,33 @@
       </button>
 
       <a class="navbar-brand navbar-left" href="{{ url('/') }}">
-            <img src = "/uploads/logo_documentaqro.png" class = "img-rounded">
-            </a>
+        <img src = "/uploads/logo_documentaqro.png" class = "img-rounded">
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
       <ul class="nav navbar-nav navLetra text-white efecto holi ">
-          <li ><a href = "/nosotros" class="efecto">NOSOTROS</a></li>
+        <li ><a href = "/nosotros" class="efecto">NOSOTROS</a></li>
       </ul>
-
       <ul class = "nav navbar-nav navLetra text-white efecto holi">
-           <li ><a href = "/calendario" class="efecto">CALENDARIO</a></li>
-        </ul>
-
-       <ul class = "nav navbar-nav navLetra text-white efecto holi">
-           <li ><a href = "/programa" class="efecto">PROGRAMAS</a></li>
-        </ul>
-
-        <ul class = "nav navbar-nav navLetra text-white efecto holi ">
-         <li><a href = "/patrocinadores/show" class="efecto">PATROCINADORES</a></li>
-       </ul>
-
-        <ul class = "nav navbar-nav navLetra text-white efecto holi ">
-         <li><a href = "/blog" class="efecto">BLOG</a></li>
-       </ul>
-
+        <li ><a href = "/calendario" class="efecto">CALENDARIO</a></li>
+      </ul>
+      <ul class = "nav navbar-nav navLetra text-white efecto holi">
+        <li ><a href = "/programa" class="efecto">PROGRAMAS</a></li>
+      </ul>
+      <ul class = "nav navbar-nav navLetra text-white efecto holi ">
+       <li><a href = "/patrocinadores/show" class="efecto">PATROCINADORES</a></li>
+      </ul>
+      <ul class = "nav navbar-nav navLetra text-white efecto holi ">
+        <li><a href = "/blog" class="efecto">BLOG</a></li>
+      </ul>
        <ul class = "nav navbar-nav navLetra text-white efecto holi ">
          <li><a href = "/sedesv" class="efecto">SEDES</a></li>
        </ul>
-
        <ul class = "nav navbar-nav navLetra text-white efecto holi ">
         <li><a href = "/contacto" class="efecto">CONTACTO</a></li>
       </ul>
-
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
