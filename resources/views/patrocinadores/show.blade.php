@@ -7,19 +7,15 @@
 <div class="container">
 <h2>PRESENTADO POR:</h2>
   <div class="row">
-  @foreach($patrocinadores as $patrocinador)
-
-
-
-    @if ($patrocinador -> categoria === 1)
-  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+    @foreach($patrocinadores as $patrocinador)
+      @if ($patrocinador -> categoria === 1)
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
           <div class="">
-              <a href="{{$patrocinador -> link}}"><img style="width:200px; max-width:200px;" src="{{ asset($patrocinador -> poster) }}" ></a>
-
+            <a href="{{$patrocinador -> link}}"><img style="width:200px; max-width:200px;" src="{{ asset($patrocinador -> poster) }}" ></a>
           </div>
-      </div>
-      @endif
-    @endforeach
+        </div>
+        @endif
+      @endforeach
     </div>
 
 <hr>
