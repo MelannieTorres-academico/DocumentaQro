@@ -1,6 +1,6 @@
 @if (count($eventos) > 0)
 <div class="container-fluid">
-  <h1>Próximos eventos</h1>
+  <h1 style="margin-top:20px;">Próximos eventos</h1>
 <hr>
 @endif
 
@@ -26,3 +26,4 @@
 
   </ul>
 </section>
+</div>
