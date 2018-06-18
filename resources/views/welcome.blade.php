@@ -25,11 +25,8 @@
 </div>
 </div>
 
-<div class="row">
+<div style="display:block;margin:0px 12px;text-align:center;" class="row"> <!--AGREGAR STYLE A CSS-->
   @include('evento.next')
 </div>
- <br><br><br><br>
- <br><br><br>
-
 
 @include('layouts.footerUser')
