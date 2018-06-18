@@ -12,7 +12,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Inicio') }}</title>
+    <title>Panel Admin</title>
 
     <!-- Styles -->
     <!-- Bootstrap core CSS -->
