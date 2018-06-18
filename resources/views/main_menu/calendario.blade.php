@@ -76,9 +76,7 @@
 <hr>
 </div>
 
-<p align='center'><a href="https://www.facebook.com/DocumentaQro/" id='facebook' ><img src= "../uploads/fb.png" height='76' width='76'></a>
-<a href="https://www.instagram.com/documentaqro/" id='instagram' ><img src= "../uploads/in.png" height='76'>
-<a href="https://twitter.com/documentaqro" id='twitter' ><img src= "../uploads/tw.png" height='76'>
-<a href="https://www.youtube.com/documentaqro" id='youtube' ><img src= "../uploads/yt.png" height='76'></p>
+@include('layouts.footerRedesSociales')
+
     </body>
 </html>
