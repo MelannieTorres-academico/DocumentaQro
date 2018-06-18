@@ -1,7 +1,4 @@
 @include('layouts.head')
-
-
-
 <div class="container">
   <br><br>
 
