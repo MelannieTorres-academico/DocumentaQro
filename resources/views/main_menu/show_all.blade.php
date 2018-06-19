@@ -7,7 +7,7 @@
   <div class="row">
 
   <div class="col-xs-4 col-sm-4 col-md-4">
-    <img src='{{ asset($programa->poster) }}' width='350'>
+    <img src='{{ asset($programa->poster) }}' class='img-fluid w-100'>
   </div>
   <div class="col-xs-8 col-sm-8 col-md-8">
     <h1>#{{$programa->titulo}}</h1>
