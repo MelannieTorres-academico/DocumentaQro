@@ -27,56 +27,32 @@
     <body>
       @include('layouts.nav')
 
-      <div class='container'>
-        <br><br>
-
-      <div class=".col-md-2 col-lg-2">
-        <div id="ab">Filtrar por Sede:</div>
-          <select id="fetchval" name="fetchby" >
-            <option value='ninguno'>Ninguno</option>
-              @foreach ($sedes as $s)
-                <option value='{{$s->id}}'>{{ $s->nombre }}</option>
+    <div class='container'>
+      <br><br>
+      <div class="row">
+        <div class="col-md-2 col-lg-2">
+          <div id="ab">Filtrar por Sede:</div>
+            <select id="sede" onChange="refetch()">
+              <option value=''>Ninguno</option>
+                @foreach ($sedes as $s)
+                  <option value='{{$s->id}}'>{{ $s->nombre }}</option>
+                @endforeach
+            </select>
+        </div>
+        <div class="col-md-2 col-lg-2">
+          <div id="ab">Filtrar por Programa:</div>
+            <select id="programa" onChange="refetch()" >
+              <option value=''>Ninguno</option>
+              @foreach ($programas as $p)
+                  <option value='{{$p->id}}'>{{ $p->titulo }}</option>
               @endforeach
-          </select>
+            </select>
+        </div>
+        <div class="col-md-8 col-lg-8"></div>
       </div>
-      <div class=".col-md-2 col-lg-2">
-        <div id="ab">Filtrar por Programa:</div>
-          <select id="fetchval2" name="fetchby2" >
-            <option value='ninguno'>Ninguno</option>
-            @foreach ($programas as $p)
-                <option value='{{$p->id}}'>{{ $p->titulo }}</option>
-            @endforeach
-          </select>
-      </div>
-<div class=".col-md-8 col-lg-8"></div>
-
-<br><br><br><br>
-<div id="table-container">
-  <?php
-
-  $conn = mysqli_connect('127.0.0.1','root','','document_sysdoq');
-  $query = "select * from calendario";
-  $output = mysqli_query($conn,$query);
-  $events = array();
-
-   while($fetch = mysqli_fetch_array($output,MYSQLI_ASSOC)) {
-     $e = array();
-
-     $e['id'] = $fetch['id'];
-     $e['title'] = $fetch['title'];
-     $e['start'] = $fetch['start'];
-     $e['color'] = $fetch['color'];
-
-     array_push($events, $e);
-
-   }
-  ?>
- </div>
- <div id='calendar'></div>
-<hr>
-</div>
-
-@include('layouts.footerRedesSociales')
-
+      <br><br><br>
+     <div id='calendar'></div>
+    </div>
+    @include('layouts.footerRedesSociales')
     </body>
 </html>

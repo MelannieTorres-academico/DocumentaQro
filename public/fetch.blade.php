@@ -22,7 +22,7 @@
       $query = "select * from calendario";
   }
 
-  $output = mysqli_query($conn,$query);
+  $output = mysqli_query($conn, $query);
   $events = array();
   while($fetch = mysqli_fetch_assoc($output)){
     $e = array();
@@ -34,7 +34,7 @@
 
     array_push($events, $e);
   }
-
+  
   echo json_encode($events);
 
  ?>

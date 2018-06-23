@@ -92,6 +92,7 @@
     Route::post('evento/{id}/edit',['as'=>'evento.update','uses'=>'EventsController@update','middleware' => ['permission:admin-events']]);
     Route::patch('evento/{id}',['as'=>'evento.update','uses'=>'EventsController@update','middleware' => ['permission:admin-events']]);
     Route::delete('evento/{id}',['as'=>'evento.destroy','uses'=>'EventsController@destroy','middleware' => ['permission:admin-events']]);
+    Route::get('fetchEvents',['as'=>'evento.fetch','uses'=>'EventsController@fetchEvents','middleware' => ['permission:admin-events']]);
 
     /*funciones*/
     Route::get('funciones',['as'=>'funciones.index','uses'=>'FuncionController@index','middleware' => ['permission:admin-events']]);
