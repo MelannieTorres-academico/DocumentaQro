@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "98fedcdd57fd8112be767afb7ffbebd0",
@@ -58,16 +58,16 @@
         },
         {
             "name": "cornford/googlmapper",
-            "version": "v2.31.4",
+            "version": "v2.31.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bradcornford/Googlmapper.git",
-                "reference": "e6acb72b717873e3d97b4cc367bc00bd765ce697"
+                "reference": "ff98e596b5927a93088e89ed90981bf5bdfa82f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bradcornford/Googlmapper/zipball/e6acb72b717873e3d97b4cc367bc00bd765ce697",
-                "reference": "e6acb72b717873e3d97b4cc367bc00bd765ce697",
+                "url": "https://api.github.com/repos/bradcornford/Googlmapper/zipball/ff98e596b5927a93088e89ed90981bf5bdfa82f5",
+                "reference": "ff98e596b5927a93088e89ed90981bf5bdfa82f5",
                 "shasum": ""
             },
             "require": {
@@ -114,7 +114,7 @@
                 "maps",
                 "streetview"
             ],
-            "time": "2018-03-07T10:29:04+00:00"
+            "time": "2018-06-05T09:46:32+00:00"
         },
         {
             "name": "cviebrock/image-validator",

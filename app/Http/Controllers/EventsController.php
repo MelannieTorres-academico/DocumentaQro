@@ -13,6 +13,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use App\Date;
 use App\Funcion;
+use Illuminate\Support\Facades\Input;
 
 class EventsController extends Controller
 {
@@ -422,6 +423,23 @@ class EventsController extends Controller
         ->get();
 
     return view('evento.next',compact('eventos'));
+    }
+
+    public function fetchEvents(){
+      $sede = Input::get('sede');
+      $programa = Input::get('programa');
+
+      if(!$sede && !$programa){
+        $eventos = Calendario::all();
+      } else if (!$sede && $programa){
+        $eventos = Calendario::where('programa_id', $programa)->get();
+      } else if($sede && !$programa){
+        $eventos = Calendario::where('sedes_id',$sede)->get();
+      } else if($sede && $programa){
+        $eventos = Calendario::where('sedes_id', $sede)->where('programa_id',$programa)->get();
+      }
+
+      return $eventos;
     }
 
 }

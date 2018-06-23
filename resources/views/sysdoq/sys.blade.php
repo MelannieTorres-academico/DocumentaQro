@@ -67,9 +67,9 @@
     </section>
     @endif
 
-        @if (Auth::user()->can('super_admin'))
+    @if (Auth::user()->can('super_admin'))
     <section class="block ">
-        <div class="products_top_text color_a"><a href='/root'><h1 class="axis-el white">Editar Cuenta Super Usuario</h1></a></div>
+      <div class="products_top_text color_a"><a href='/root'><h1 class="axis-el white">Editar Cuenta Super Usuario</h1></a></div>
     </section>
      @endif
 

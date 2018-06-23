@@ -30,7 +30,8 @@
 
 .navLetra {
 
-	font-size: 18px;
+	font-size: 17px;
+  margin-left:15px;
 
 }
 
@@ -90,4 +91,7 @@ display: none;
 .elements {
 display: none;
 }
+}
+.fc-content{
+  cursor:pointer;
 }

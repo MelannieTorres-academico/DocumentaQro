@@ -1,110 +1,45 @@
-$(document).ready(function() {
+  $(document).ready(function() {
+      $.ajax({
+          url: '/fetchEvents',
+          type: 'GET',
+          async: false,
+          success: function(data){
+              json_events = data;
+              console.log(json_events);
+          }
+      });
 
-        		 $("#fetchval").on('change',function(){
+  		$('#calendar').fullCalendar({
+  			header: {
+  				left: 'prev,next today',
+  				center: 'title',
+  				right: 'month,basicWeek,basicDay',
+  			},
+  			events: {
+          events:json_events,// {"id":"1", "start":"01-01-2018", "end":"01-02-2018", "title":"my event"},//json_events,//
+      		error: function() {
+            alert('There was an error while fetching events!');
+            console.log(json_events);
+          }
+  			},
 
-                    var keyword = $(this).val();
-                    var keyword2 = $('#fetchval2').val();
-                    $.ajax({
-                        url: 'fetch.blade.php',
-                        type:'POST',
-                        data:{ request: keyword, request2: keyword2 },
+        eventClick: function(event) {
+            window.open('/eventos/'+event.id);
+        }
+  		});
 
-                        beforeSend:function(){
-                            $("#table-container").html('Working...');
-                        },
-                        success:function(data){
-                            $("#table-container").html("");
-                            //console.log("data:");
-                            //console.log(data);
-                            json_events = data;
-                            //console.log('refetching');
+  });
 
-
-
-                            $('#calendar').fullCalendar(  'removeEvents' );
-
-                            $('#calendar').fullCalendar(  'renderEvents', JSON.parse(json_events),true );
-
-                        },
-                    });
-                });
-
-
-                  $("#fetchval2").on('change',function(){
-
-                    var keyword = $('#fetchval').val();
-                    var keyword2 = $(this).val();
-
-                    $.ajax({
-                        url:'fetch.blade.php',
-                        type:'POST',
-                        data:{request: keyword, request2: keyword2 },
-
-                        beforeSend:function(){
-                            $("#table-container").html('Working...');
-                        },
-                        success:function(data){
-                            $("#table-container").html("");
-                           // console.log("data:");
-                            //console.log(data);
-                            json_events = data;
-                            //console.log('refetching');
-                            $('#calendar').fullCalendar(  'removeEvents' );
-
-
-                            $('#calendar').fullCalendar(  'renderEvents', JSON.parse(json_events), true);
-                        },
-                    });
-                });
-
-
-
-                $.ajax({
-                url: 'fetch.blade.php',
-                        type: 'POST',
-                        data: 'type=fetch',
-                        async: false,
-                        success: function(data){
-                            json_events = data;
-
-
-                        }
-                });
-
-        		$('#calendar').fullCalendar({
-        			header: {
-        				left: 'prev,next today',
-        				center: 'title',
-        				right: 'month,basicWeek,basicDay',
-
-        			},
-        			events: {
-        			    url: 'fetch.blade.php',
-                        type: 'POST',
-                        data: 'type=fetch',
-                        async: false,
-
-                        events:JSON.parse(json_events),
-                		error: function() {
-                                alert('there was an error while fetching events!');
-                                console.log('ERROR');
-
-                                console.log(json_events);
-
-                        }
-
-        			},
-
-              eventClick: function(event) {
-                  if ('/eventos/') {
-                      window.open('/eventos/'+event.id);
-                      return false;
-                  }
-              }
-
-
-
-
-        		});
-
-        	});
+  function refetch(){
+    var sede = $('#sede').val();
+    var programa = $('#programa').val();
+    $.ajax({
+        url: '/fetchEvents?sede='+sede+'&programa='+programa,
+        type:'GET',
+        success:function(data){
+          json_events = data;
+          $('#calendar').fullCalendar(  'removeEvents' );
+          $('#calendar').fullCalendar(  'renderEvents', json_events,true );
+        },
+    });
+  }
