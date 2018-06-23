@@ -2,8 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-     <script src="sweetalert/dist/sweetalert.min.js"></script>
-     <link rel="stylesheet" type="text/css" href="sweetalert/dist/sweetalert.css">
      <link rel="icon" href="../../favicon.ico">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +9,8 @@
       <title>Calendario</title>
       <script type="text/javascript" src="/js/jquery.js"></script>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" >
       <link rel="stylesheet" href="/css/master.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link href="/css/nav.css" rel="stylesheet">
       <link href='/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
       <link href='/fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
