@@ -1,19 +1,18 @@
 @include('layouts.head')
 <div class="container">
-
-
 <br><br>
-  <div class="col-sm-3 col-md-3 col-lg-3">
+<div class="row">
+
+  <div class="col-sm-4 col-md-4 col-lg-4">
     @if($event->poster)
     <!--<div align="left"><img src='/{{ $event->poster }}' width='300'></div>-->
       <div align="left">
-        <iframe src="{{ $event->poster }}" width="275" height="365" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe> 
+        <iframe src="{{ $event->poster }}" class="img-fluid w-100" width="275" height="365" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
         </div>
 
     @endif
-  </div>
-  <div class="col-sm-2 col-md-2 col-lg-2"></div>
-    <div class="col-sm-6 col-md-6 col-lg-6">
+    </div>
+    <div class="col-sm-8 col-md-8 col-lg-8">
 
 
         <h1>{{ $event->title }}</h1>
@@ -37,6 +36,7 @@
 
 
   </div>
+</div>
 
 
 

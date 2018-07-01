@@ -12,14 +12,14 @@
       @foreach ($datasheets  as $key => $datasheet)
 
 
-      <div class="col-sm-3 col-md-3 col-lg-3">
+      <div class="col-sm-4 col-md-4 col-lg-4">
         <div align="left">
         <!--<img src='/{{ $datasheet->poster }}' width='300'>-->
-        <iframe src="{{ $datasheet->poster }}" width="275" height="365" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe> 
+        <iframe src="{{ $datasheet->poster }}" class="img-fluid w-100" width="275" height="365" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
         </div>
       </div>
-      <div class="col-sm-2 col-md-2 col-lg-2"></div>
-        <div class="col-sm-6 col-md-6 col-lg-6">
+      <!--<div class="col-sm-2 col-md-2 col-lg-2"></div>-->
+        <div class="col-sm-8 col-md-8 col-lg-8">
           @if ($key==0)
             <h1>#{{$datasheet->programa}}</h1>
           @endif
@@ -43,11 +43,9 @@
             @endif
 
       </div>
-<p style="color:white">{{$video}}</p><br>
+<br>
       @if (count($datasheets)==1)
-      <div style="text-align:center">
-        <iframe width="560" height="315" src='{{$video}}' frameborder="0" allowfullscreen></iframe>
-      </div>
+      <iframe style="margin-right:auto;margin-left:auto;" width="560" height="315" src='{{$video}}' frameborder="0" allowfullscreen></iframe>
       @endif
 
 @endforeach
