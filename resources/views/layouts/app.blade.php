@@ -58,7 +58,7 @@
         <script src="{{ asset('js/validateImage.js') }}"></script>
         <script src="{{ asset('js/bootstrap-formhelpers-countries.js') }}"></script>
         <script src="{{ asset('js/bootstrap-formhelpers-countries.es_ES.js') }}"></script>
-
+        <script src="{{ asset('js/coinciden_contra.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/master.js') }}"></script>
 </body>
