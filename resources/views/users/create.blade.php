@@ -27,25 +27,25 @@
 		<div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Nombre:</strong>
-                {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control')) !!}
+                {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control','required' => 'required')) !!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Email:</strong>
-                {!! Form::text('email', null, array('placeholder' => 'Email','class' => 'form-control')) !!}
+                {!! Form::email('email', null, array('placeholder' => 'Email','class' => 'form-control','required' => 'required')) !!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Contraseña:</strong>
-                {!! Form::password('password', array('placeholder' => 'Password','class' => 'form-control','id' => 'password')) !!}
+                {!! Form::password('password', array('placeholder' => 'Password','class' => 'form-control','id' => 'password','required' => 'required')) !!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Confirmar Contraseña:</strong>
-                {!! Form::password('confirm-password', array('placeholder' => 'Confirm Password','class' => 'form-control','id' => 'confirm_password')) !!}
+                {!! Form::password('confirm-password', array('placeholder' => 'Confirm Password','class' => 'form-control','id' => 'confirm_password','required' => 'required')) !!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
